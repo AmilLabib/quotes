@@ -1,0 +1,125 @@
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1000ms linear;
+}
+
+.defBack {
+  background-color: aqua;
+}
+
+.defCol {
+  color: aqua;
+}
+
+.author {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+#quote-box {
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  height: auto;
+  width: 550px;
+  background-color: rgba(255, 255, 255, 80);
+  transition: height 1s;
+}
+
+#text {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.quote-top {
+  display: flex;
+}
+
+.bi {
+  font-size: 3rem;
+}
+
+.quote-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.share {
+  display: flex;
+}
+
+.quoteSocmed {
+  display: flex;
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#tweet-quote,
+#tumblr-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new-quote {
+  width: auto;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#new-quote:hover {
+  opacity: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  opacity: 80%;
+}
+
+.bi-twitter,
+.bi-stack-overflow {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
