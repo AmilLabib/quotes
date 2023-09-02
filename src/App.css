@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   transition: background-color 1000ms linear;
 }
 
@@ -36,11 +37,13 @@
   width: 550px;
   background-color: rgba(255, 255, 255, 80);
   transition: height 1s;
+  max-width: 90%;
 }
 
 #text {
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 .quote-top {
@@ -122,4 +125,14 @@ a:hover {
   text-decoration: none;
   color: white;
   font-size: 1.7rem;
+}
+
+.footer h4 {
+  margin-top: 10px;
+  color: white;
+  font-weight: 300;
+}
+
+.footer h4 .name {
+  font-weight: 500;
 }
