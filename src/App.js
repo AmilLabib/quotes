@@ -1,80 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-
-let quotesList = [
-  {
-    text: "If you can’t explain it simply, you don’t understand it well enough.",
-    author: "Albert Einstein",
-  },
-
-  {
-    text: "I believe every human has a finite number of heartbeats. I don’t intend to waste any of mine.",
-    author: "Neil Armstrong",
-  },
-
-  {
-    text: "I have not failed. I’ve just found 10,000 ways that won’t work",
-    author: "Thomas A. Edison",
-  },
-
-  {
-    text: "Many of life’s failures are people who did not realize how close they were to success when they gave up.",
-    author: "Thomas A. Edison",
-  },
-
-  {
-    text: "It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.",
-    author: "Charles Darwin",
-  },
-
-  {
-    text: "It does not matter how slowly you go, so long as you do not stop.",
-    author: "Confucius",
-  },
-
-  {
-    text: "All our dreams can come true if we have the courage to pursue them.",
-    author: "Walt Disney",
-  },
-
-  {
-    text: "No one can make you feel inferior without your consent.",
-    author: "Eleanor Roosevelt",
-  },
-
-  {
-    text: "Only put off until tomorrow what you are willing to die having left undone.",
-    author: "Pablo Picasso",
-  },
-
-  {
-    text: "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.",
-    author: "Mark Twain",
-  },
-
-  {
-    text: "Failure is another steppingstone to greatness.",
-    author: "Oprah Winfrey",
-  },
-
-  {
-    text: "The best and most beautiful things in the world cannot be seen or even touched – they must be felt with the heart",
-    author: "Helen Keller",
-  },
-
-  {
-    text: "When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.",
-    author: "Helen Keller",
-  },
-
-  {
-    text: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
-    author: "Mahatma Gandhi",
-  },
-];
+import { quotesList } from "./quoteList";
 
 function generateQuotes() {
-  const n = Math.floor(Math.random() * 13);
+  const n = Math.floor(Math.random() * (quotesList.length - 1));
   return quotesList[n];
 }
 
@@ -147,6 +76,12 @@ function App() {
               New Quote
             </button>
           </div>
+        </div>
+
+        <div className="footer">
+          <h4>
+            by <span className="name">AmilLabib</span>
+          </h4>
         </div>
       </div>
     </>
